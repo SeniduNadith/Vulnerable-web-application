@@ -1,0 +1,292 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #f9f9f9, #e0f7fa);
+  color: #333;
+}
+
+/* Header */
+header {
+  background: linear-gradient(90deg, #4CAF50, #2E7D32);
+  color: #fff;
+  padding: 15px 0;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+header .logo h1 {
+  margin: 0;
+  font-size: 2.2em;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #c8e6c9;
+}
+
+/* Products Section */
+section.products {
+  margin: 40px 20px;
+  text-align: center;
+}
+
+section.products h2 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #2E7D32;
+}
+
+.product-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.product {
+  background-color: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 260px;
+  text-align: center;
+  border-radius: 12px;
+  transition: transform 0.3s;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.product h3 {
+  font-size: 1.7em;
+  margin-top: 15px;
+  color: #333;
+}
+
+.product p {
+  font-size: 1.3em;
+  margin: 10px 0;
+  color: #4CAF50;
+}
+
+.product button {
+  padding: 10px 20px;
+  background: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.product button:hover {
+  background: #388E3C;
+}
+
+/* Footer */
+footer {
+  background-color: #2E7D32;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Login Form */
+.login-form {
+  margin: 80px auto;
+  width: 320px;
+  background: #fff;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.login-form h2 {
+  margin-bottom: 25px;
+  color: #2E7D32;
+}
+
+.login-form label {
+  display: block;
+  text-align: left;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 12px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.login-form button:hover {
+  background: #388E3C;
+}
+
+/* Cart Page */
+.cart {
+  margin: 80px auto;
+  width: 90%;
+  background: #fff;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cart h2 {
+  margin-bottom: 25px;
+  text-align: center;
+  color: #2E7D32;
+}
+
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cart-table th, .cart-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+  font-size: 1em;
+}
+
+.cart-table th {
+  background-color: #f1f8e9;
+  font-weight: bold;
+}
+
+.cart-total {
+  margin-top: 25px;
+  text-align: right;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #4CAF50;
+}
+
+/* User Dashboard */
+.user-dashboard, .admin-dashboard {
+  margin: 80px auto;
+  width: 90%;
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.user-dashboard h2, .admin-dashboard h2 {
+  color: #2E7D32;
+  font-size: 2.2em;
+  margin-bottom: 20px;
+}
+
+.user-dashboard p, .admin-dashboard p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.user-dashboard button, .admin-dashboard button {
+  padding: 12px 25px;
+  background: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  margin: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.user-dashboard button:hover, .admin-dashboard button:hover {
+  background: #388E3C;
+}
+
+/* Simple feedback form styling */
+.feedback form {
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.feedback label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.feedback input,
+.feedback textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.feedback button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.feedback button:hover {
+  background-color: #45a049;
+}
+
+
